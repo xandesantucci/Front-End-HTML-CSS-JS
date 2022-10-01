@@ -1,0 +1,286 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./MH_Logo.png" type="image/x-icon">
+    <!-- JS -->
+    <script defer src="./Modulo1.js"></script>
+    <title class="page_title">MH-Rise</title>
+
+
+
+    <style>
+        @import url('http://fonts.cdnfonts.com/css/zrnic');
+        @import url('http://fonts.cdnfonts.com/css/free-shipping');
+        body{
+            font-family: 'Free Shipping', sans-serif;
+            text-align: center;
+            background: linear-gradient(rgba(41, 40, 40, 0.8),rgba(197, 191, 191, 0.8)), url('./MH-Rise-Background.avif');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        
+        }
+
+        .cabecalho{
+            height: 52px;
+            width: 100%;
+            background-color: #1F4690;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            float: left;
+            z-index: 1;
+        }
+
+        .div1{
+            height: 50px;
+            width: 150px;
+            position: absolute;
+            left: 20%;
+            margin: 1px;
+            border-radius: 15px;
+            
+        }
+        .div2{
+            height: 30px;
+            width: 150px;
+            background-color: #E8AA42;
+            position: absolute;
+            left: 33%;
+            margin: 10px;
+            border-radius: 15px;
+            border: solid black 1px;
+        }
+        .div3{
+            height: 30px;
+            width: 150px;
+            background-color: #E8AA42;
+            position: absolute;
+            left: 46%;
+            margin: 10px;
+            border-radius: 15px;
+            border: solid black 1px;
+        }
+        .div4{
+            height: 30px;
+            width: 150px;
+            background-color: #E8AA42;
+            position: absolute;
+            left: 59%;
+            margin: 10px;
+            border-radius: 15px;
+            border: solid black 1px;
+        }
+        .img-header{
+            height: 50px;
+            width: 100px;
+            position: absolute;
+            left: 20%;
+            margin: 1px;
+        }
+        .types{
+            height: 50px;
+            width: 100px;
+            position: relative;
+            left: 18%;
+            top: 20%;
+            margin: 1px;
+            color:#1F4690;
+            cursor: pointer;
+        }
+        .types:hover{
+            color: #607EAA;
+        }
+
+        
+        #box{
+            height: 80px;
+            width: 200px;
+            position: fixed;
+            top: 45px;
+            left: 38%;
+            opacity: 0;
+        }
+        .boxing{
+            top: 10px;
+            background-color:  #E8AA42;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            list-style-type: none;
+            border: solid black 1px;
+            position: relative;
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .boxing li:hover{
+            color: purple;
+            cursor: pointer;
+        }
+
+        #box2{
+            height: 80px;
+            width: 200px;
+            position: fixed;
+            top: 45px;
+            left: 50%;
+            opacity: 0;
+        }
+
+        #box3{
+            height: 80px;
+            width: 200px;
+            position: fixed;
+            top: 45px;
+            left: 25%;
+            opacity: 0;
+        }
+ 
+
+        
+        .foot{
+            margin: 0;
+            padding: 0;
+            position:fixed;
+            left: 0;
+            bottom: 0px;;
+            height: 50px;
+            width: 100%;
+            background-color:#1F4690;}
+
+        .foottext{
+            color: white;
+            font-family:  'Zrnic', sans-serif;
+            animation:fading 5s infinite
+        }@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+
+        /* h2{animation:fading 3s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}} */
+
+        table{
+            border-collapse: collapse;
+            font-family: 'Trebuchet MS';
+            width: 60%;
+            text-align: center;
+            position: relative;
+            top: 60%;
+            left: 20%;
+        }
+        
+        table thead{
+            background-color:#DFF6FF;
+            position: sticky;
+            top:50px;
+        }
+
+        th{
+            color: #1F4690;
+        }
+
+        td, th{
+            border: solid black 2px;
+        }
+
+        tbody{
+            background-color:  #E8AA42;
+            color: black;
+        }
+        caption{
+            background-color: #1F4690;
+            color: white;
+            border: solid black 2px;
+        }
+        
+        .gifs-a{
+            height: 300px;
+            position: relative;
+            top: 10%;
+            /* left: 20%; */
+            
+        }
+        .gifs-b{
+            position: relative;
+            top: 10%;
+            /* left: 33%; */
+        }
+
+        .space{
+            height: 40px;
+        }
+
+/*         
+        .boxing {
+            display: block;
+            height: 293px;
+            width: 600px;
+            margin: auto;
+            margin-top: 20px;
+            position: relative;
+        }
+        
+        .boxing li {
+            list-style: none;
+            position: absolute;
+        } */
+
+    </style>
+
+</head>
+<body>
+    <main class="content">
+        <header class="cabecalho">
+            <div class="div1">
+                <img src="./monsterhunterrise-wiki-guidelogo-large.png"  class="img-header">
+            </div>
+            <div class="div2">
+                <p class="types" id="mons">Monsters</p>
+            </div>
+            <div class="div3">
+                <p class="types" id="loc">Locations</p>
+            </div>
+            <div class="div4">
+                <p class="types" id="weak">Weakness</p>
+            </div>   
+        </header>
+    <div class="box" id="box3" >
+        <ul class="boxing" id="boxing3">
+        </ul>
+    </div>
+    <div class="box" id="box" >
+        <ul class="boxing" id="boxing1">
+            <li class="filtrando"></li>
+        </ul>
+    </div>
+    <div class="box" id="box2" >    
+        <ul class="boxing" id="boxing2">
+        </ul>
+    </div>
+    <img src="./rathian-gif.gif" class="gifs-a">
+    <img src="./monster-hunter-rathalos.gif" class="gifs-b">
+    </div>
+    <div>
+    <table id='mytable'>
+        <caption> Monster Hunter World API</caption>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Location</th>
+                <th>Weakness</th>
+            </tr>
+        </thead>
+        <tbody id='tbody'>
+        </tbody>
+    </table>
+    </div>
+    <div class="space"></div>
+    <footer>
+        <div class="foot">
+            <p class="foottext">Este site foi criado por: Alexandre Santucci, como tarefa do Oi Devs - Front-End </p>
+        </div>
+    </footer>
+    </main>
+</body>
+</html>
