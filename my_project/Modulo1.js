@@ -12,7 +12,6 @@ function addition(term,lista){
     const cell = document.createElement('li');
     newText = document.createTextNode(term);
     cell.appendChild(newText);
-    cell.className = 'teste'
     const box = document.getElementById(lista);
     box.appendChild(cell);
   }}
@@ -24,12 +23,12 @@ const rendermonster = async () => {
     for(let i = 0; i < 60; i++){
     const id = data[i].id;
     const name = data[i].name;
-    addition(name,'boxing3')
+    addition(name,'boxing1')
     const locations = data[i].locations[0].name;
-    addition(locations,'boxing1')
+    addition(locations,'boxing2')
     const weaknesses_old = data[i].weaknesses[0].element;
     const weaknesses = weaknesses_old.charAt(0).toUpperCase() + weaknesses_old.slice(1);
-    addition(weaknesses,'boxing2')
+    addition(weaknesses,'boxing3')
         let row = tbody.insertRow(-1);
         let cell = row.insertCell(0);
         newText = document.createTextNode(weaknesses);
@@ -97,12 +96,13 @@ function opacidade(box) {
     boxy.style.cssText = 'opacity: 1; z-index: 1;'
   }}
 // ALTERACAO DO CABECALHO
-const button1 = document.getElementById('loc');
-button1.addEventListener("click", function(){opacidade('box')});
-const button2 = document.getElementById('weak');
+const button1 = document.getElementById('mons');
+button1.addEventListener("click", function(){opacidade('box1')});
+const button2 = document.getElementById('loc');
 button2.addEventListener("click", function(){opacidade('box2')});
-const button3 = document.getElementById('mons');
+const button3 = document.getElementById('weak');
 button3.addEventListener("click", function(){opacidade('box3')});
+
 
 // const filtrando = document.getElementsByClassName('types');
 
