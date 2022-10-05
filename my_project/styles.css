@@ -111,7 +111,7 @@ body {
 
 
 .gif_body{
-    grid-column: 1/-1;
+    grid-column: 1/-2;
     grid-row: 2/3;
     text-align: center;
 }
@@ -125,8 +125,19 @@ body {
     
 }
 
+#side1 {
+    background-color: white;
+    grid-column: -2/-1;
+    grid-row: 2/3;
+    height: 80%;
+    width: 80%;
+    border: solid black 1px;
+    text-align: justify;
+    
+}
+
 .table_grid{
-    grid-column: 1/-1;
+    grid-column: 1/-2;
     grid-row: 3/4;
 }
 
@@ -163,13 +174,28 @@ caption{
     border: solid black 2px;
 }
 
+#side2 {
+    background-color: #1F4690;
+    grid-column: -2/-1;
+    grid-row: 3/4;
+    height: 30%;
+    width: 80%;
+    border: solid black 1px;
+    font-family:  'Zrnic', sans-serif;
+    color: #E8AA42;
+    
+    /* text-align: justify; */
+    
+}
+
 
 .foot{
     background-color: #1F4690;
     grid-column: 1/-1;
     grid-row: 4/5;
-    display: flex;
     position: fixed;
+    text-align: center;
+    left: 0px;
     width: 100%;
     bottom: 0%;
 }
