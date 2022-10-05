@@ -69,8 +69,17 @@
     <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga quas consequatur distinctio, voluptatum suscipit fugit repellat est sint sapiente asperiores esse sed sequi id hic expedita? Nihil error voluptas distinctio.
     </p> -->
     <form action="https://www.w3schools.com/action_page.php" method="post">
-        <label for="monster">Write your monster name:</label>
-        <input type="text" name='Name' id="monster"> <br>
+        
+
+        <label for="monster_select">Pick one monster:</label>
+        <select name="Name" id="monster_select">
+            <option value="Aptonoth">Aptonoth</option>
+            <option value="Jagras">Jagras</option>
+            <option value="Mernos">Mernos</option>
+        </select> <br>
+
+        <label for="monster">Or write your monster name:</label>
+        <input type="text" name='NameWrite' id="monster" placeholder="Monster"> <br>
 
         <h3>Choose Hunt Location:</h3> 
         <input type="radio" name="location" value="Ancient Forest" id="location1" checked>

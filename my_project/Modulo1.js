@@ -90,10 +90,12 @@ rendermonster()
 // FUNCAO PARA FAZER APARECER OU SUMIR UM ELEMENTO
 function opacidade(box) {
   const boxy = document.getElementById(box)
-  if ( boxy.style.cssText == 'opacity: 1; z-index: 1;'){
-    boxy.style.cssText = 'opacity: 0; z-index: 0;'
+  if ( boxy.style.display === 'block'){
+    boxy.style.display = 'none'
+    boxy.style.zIndex = '0'
   } else {
-    boxy.style.cssText = 'opacity: 1; z-index: 1;'
+    boxy.style.display = 'block'
+    boxy.style.zIndex = '1'
   }}
 // ALTERACAO DO CABECALHO
 const button1 = document.getElementById('mons');

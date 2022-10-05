@@ -64,6 +64,7 @@ body {
     font-family: 'Free Shipping', sans-serif;
     top: 10px;
     width: 200px;
+    max-height: 300px;
     background-color:  #E8AA42;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -74,7 +75,7 @@ body {
     position: relative;
     margin: 0%;
     padding: 0%;
-
+    overflow: auto;
 }
 
 .boxing li:hover{
@@ -88,7 +89,7 @@ body {
     position: fixed;
     top: 45px;
     left: 22%;
-    opacity: 0;
+    display: none;
 }
 
 #box2{
@@ -97,7 +98,7 @@ body {
     position: fixed;
     top: 45px;
     left: 47%;
-    opacity: 0;
+    display: none;
 }
 
 #box3{
@@ -106,7 +107,7 @@ body {
     position: fixed;
     top: 45px;
     left: 72%;
-    opacity: 0;
+    display: none;
 }
 
 
@@ -118,11 +119,7 @@ body {
 
 .gifs{
     max-height: 200px;
-    min-height: 50px;
-    /* position: relative;
-    top: 10%;
-    left: 20%; */
-    
+    min-height: 50px;   
 }
 
 #side1 {
@@ -178,16 +175,24 @@ caption{
     background-color: #1F4690;
     grid-column: -2/-1;
     grid-row: 3/4;
-    height: 30%;
+    height: 430px;
     width: 80%;
     border: solid black 1px;
     font-family:  'Zrnic', sans-serif;
-    color: #E8AA42;
-    
-    /* text-align: justify; */
-    
+    color: #E8AA42;    
 }
 
+input {
+    cursor: pointer;
+}
+
+select {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
 
 .foot{
     background-color: #1F4690;
