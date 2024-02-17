@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./MH_Logo.png" type="image/x-icon">
+    <title class="page_title">MH-Rise</title>
+    <!-- JS -->
+    <script defer src="./Modulo1.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+    <main class="content">
+        <header class="header_grid">
+            <div>
+                <img src="./monsterhunterrise-wiki-guidelogo-large.png"  class="img-header">
+            </div>
+            <div class="header">
+                <p class="types" id="mons">Monsters</p>
+            </div>
+            <div class="header">
+                <p class="types" id="loc">Locations</p>
+            </div>
+            <div class="header">
+                <p class="types" id="weak">Weakness</p>
+            </div>   
+        </header>
+    <div class="box" id="box1" >
+        <ul class="boxing" id="boxing1">
+        </ul>
+    </div>
+    <div class="box" id="box2" >
+        <ul class="boxing" id="boxing2">
+            <li class="filtrando"></li>
+        </ul>
+    </div>
+    <div class="box" id="box3" >    
+        <ul class="boxing" id="boxing3">
+        </ul>
+    </div>
+    <div  class='gif_body'>
+        <img src="./rathian-gif.gif" class="gifs">
+        <img src="./monster-hunter-rathalos.gif" class="gifs">
+        <!-- <img src="./monster-hunter-diablos.gif" class='gifs'> -->
+    </div>
+    <!-- <div id="side1">
+       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga quas consequatur distinctio, voluptatum suscipit fugit repellat est sint sapiente asperiores esse sed sequi id hic expedita? Nihil error voluptas distinctio.
+       </p> 
+    </div> -->
+    <div class="table_grid">
+    <table id='mytable'>
+        <caption> Monster Hunter World API</caption>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Location</th>
+                <th>Weakness</th>
+            </tr>
+        </thead>
+        <tbody id='tbody'>
+        </tbody>
+    </table>
+    </div>
+    <div id="side2">
+    
+    <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga quas consequatur distinctio, voluptatum suscipit fugit repellat est sint sapiente asperiores esse sed sequi id hic expedita? Nihil error voluptas distinctio.
+    </p> -->
+    <form action="https://www.w3schools.com/action_page.php" method="post">
+        
+
+        <label for="monster_select">Pick one monster:</label>
+        <select name="Name" id="monster_select">
+            <option value="Aptonoth">Aptonoth</option>
+            <option value="Jagras">Jagras</option>
+            <option value="Mernos">Mernos</option>
+        </select> <br>
+
+        <label for="monster">Or write your monster name:</label>
+        <input type="text" name='NameWrite' id="monster" placeholder="Monster"> <br>
+
+        <h3>Choose Hunt Location:</h3> 
+        <input type="radio" name="location" value="Ancient Forest" id="location1" checked>
+        <label for="location1">Ancient Forest</label> <br>
+        
+        <input type="radio" name="location" value="Wild Spire Waste" id="location2" >
+        <label for="location2">Wild Spire Waste</label> <br>
+        
+        <input type="radio" name="location" value="Coral Highlands" id="location3" >
+        <label for="location3">Coral Highlands</label> <br>
+        
+        <input type="radio" name="location" value="Elder's Recess" id="location4" >
+        <label for="location4">Elder's Recess</label> <br>
+
+        <h3>Choose Element of Damage:</h3> 
+
+        <input type="checkbox" name='Weakness1' value="Fire" id="weakness1">
+        <label for="weakness1">Fire</label> <br>
+        <input type="checkbox" name='Weakness2'  value="Water" id="weakness2">
+        <label for="weakness2">Water</label> <br>
+        <input type="checkbox" name='Weakness3'  value="Thunder" id="weakness3">
+        <label for="weakness3">Thunder</label> <br>
+        <input type="checkbox" name='Weakness4'  value="Dragon" id="weakness4">
+        <label for="weakness4">Dragon</label> <br>
+        <input type="checkbox" name='Weakness5'  value="Blast" id="weakness5">
+        <label for="weakness5">Blast</label> <br>
+        <input type="checkbox" name='Weakness6'  value="Ice" id="weakness6">
+        <label for="weakness6">Ice</label> <br><br>
+
+        <button type="submit">Submit Hunt</button>
+    </form>
+    </div>
+    <footer>
+        <div class="foot">
+            <p class="foottext">Este site foi criado por: Alexandre Santucci, como tarefa do Oi Devs - Front-End </p>
+        </div>
+    </footer>
+    </main>
+</body>
+</html>
